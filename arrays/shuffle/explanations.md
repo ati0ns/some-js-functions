@@ -31,7 +31,7 @@ At each end of iteration, `i` takes the value of the next value.
 The elements at the indexes `i` and `j` are now the elements at the indexes `j` and `i` **in this order**.
 ```js
     } // for-loop's end
-    return this;
+    return arr;
 }; // function's end
 ```
 The functions returns the `arr` shuffled. But `arr` is also modified without using the returned value.

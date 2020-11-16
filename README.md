@@ -14,7 +14,7 @@ String.prototype.args = function (group) { return require("path/to/args/function
 console.log("Maybe coulds are drunk and fly in the dirt.".args(5));
 // ["Maybe coulds are drunk and", "fly in the dirt."]
 ```
-<br>
+<br><br>
 ```js
 // Without prototyped function.
 args("<String>".toLowerCase().trim()).join("|")

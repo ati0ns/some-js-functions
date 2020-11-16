@@ -1,4 +1,9 @@
 # Changelog
+## [1.0.1] 2020-11-16
+### Fixed
+* Missing `<br>` in [README](https://github.com/ati0ns/some-js-functions/blob/master/README.md) so it renders bad.
+* `arr` instead of `this` in the [shuffle function's explanations](https://github.com/ati0ns/some-js-functions/blob/master/arrays/shuffle/explanations.md#line-by-line-analysis).
+<br><br>
 ## [1.0.0] 2020-11-15
 ### Added
 * [areTogether](https://github.com/ati0ns/some-js-functions/tree/master/arrays/areTogether) function both basic and minified versions with explanations.
