@@ -27,7 +27,7 @@ If either `arr` or `args` is not an Array, it means that the given arguments wer
 ```js
     const lim = arr.length - args.length;
 ```
-`lim` is the number of elements in `arr`. It is defined to do not look the property `length` of `arr` at each loop iteration. The elements to find can not be found if there do not still enough enough args so : `lim - args.length`.
+`lim` is the number of elements in `arr`. It is defined to do not look the property `length` of `arr` at each loop iteration. The elements to find can not be found if there do not still enough enough args so: `lim - args.length`.
 ```js
     while (i < lim) {
 ```

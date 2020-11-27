@@ -3,9 +3,9 @@
  * @param {string} calc
  */
 module.exports = calc => {
-    if (!calc) return;
+    if (typeof calc != "string") return;
 
-    if (/\(\)|\[\]|[/+-]{2}|\*\*\/|(?<![A-z\d ]|\)|\])\/|(?<![A-z\d ]|\)|\]|(?<!\*)\*)\*|(?<![A-z\d ]|\)|\]|\*\*?)[+-]|(\)|\]) *[A-z\d]|(\d|[A-z]) +(\d|[A-z])|[A-z] *\d/.test(calc)) return !1;
+    if (/\(\)|\[\]|[/+-]{2}|\*\*\/|(?<![A-Za-z\d ]|\)|\])\/|(?<![A-Za-z\d ]|\)|\]|(?<!\*)\*)\*|(?<![A-Za-z\d ]|\)|\]|\*\*?)[+-]|(\)|\]) *[A-Za-z\d]|(\d|[A-Za-z]) +(\d|[A-Za-z])|[A-Za-z] *\d/.test(calc)) return !1;
 
     let parenthesis = 0;
     for (const char of calc.split(''))

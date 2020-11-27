@@ -1,5 +1,5 @@
 /**
  * Checks if a calcul is correct with its operations and parenthesis.
- * @param {string} c
+ * @param {string} calc
  */
-module.exports=c=>{if(!c)return;if(/\(\)|\[\]|[/+-]{2}|\*\*\/|(?<![A-z\d ]|\)|\])\/|(?<![A-z\d ]|\)|\]|(?<!\*)\*)\*|(?<![A-z\d ]|\)|\]|\*\*?)[+-]|(\)|\]) *[A-z\d]|(\d|[A-z]) +(\d|[A-z])|[A-z] *\d/.test(c))return!1;let p=0;for(const h of c.split(''))if((["(","["].includes(h)?++p:[")","]"].includes(h)&&--p)<0)break;return !p}
+module.exports=calc=>{const c=calc;if(typeof c!="string")return;if(/\(\)|\[\]|[/+-]{2}|\*\*\/|(?<![A-Za-z\d ]|\)|\])\/|(?<![A-Za-z\d ]|\)|\]|(?<!\*)\*)\*|(?<![A-Za-z\d ]|\)|\]|\*\*?)[+-]|(\)|\]) *[A-Za-z\d]|(\d|[A-Za-z]) +(\d|[A-Za-z])|[A-Za-z] *\d/.test(c))return!1;let p=0;for(const h of c.split(''))if((["(","["].includes(h)?++p:[")","]"].includes(h)&&--p)<0)break;return!p}

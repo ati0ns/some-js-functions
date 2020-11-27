@@ -1,4 +1,22 @@
 # Changelog
+## [1.1.0] 2020-11-27
+### Added
+* [asyncForEach](https://github.com/ati0ns/some-js-functions/tree/master/others/asyncForEach) function both basic and minified versions.
+* [findBeacons](https://github.com/ati0ns/some-js-functions/tree/master/strings/findBeacons) function both basic and minified versions.
+* [getObjValue](https://github.com/ati0ns/some-js-functions/tree/master/objects/getObjValue) function both basic and minified versions.
+* [loadBar](https://github.com/ati0ns/some-js-functions/tree/master/others/loadBar) function both basic and minified versions.
+* [split](https://github.com/ati0ns/some-js-functions/tree/master/arrays/split) (for arrays) function both basic and minified versions.
+* [toDate](https://github.com/ati0ns/some-js-functions/tree/master/dates/toDate) function both basic and minified versions.
+* [toMs](https://github.com/ati0ns/some-js-functions/tree/master/strings/toMs) function both basic and minified versions.
+* [toSentences](https://github.com/ati0ns/some-js-functions/tree/master/strings/toSentences) function both basic and minified versions.
+### Changed
+* Minified functions parameters' names are more readable.
+* Wrong regex with `[A-z]` now correct with `[A-Za-z]`.
+*  [README](https://github.com/ati0ns/some-js-functions/blob/master/README.md) now displays prototyped-can functions in tables instead of lists. "README" title added.
+### Fixed
+* Wrong method's name `method` now `join` in [README](https://github.com/ati0ns/some-js-functions/blob/master/README.md)
+* Wrong link in [README](https://github.com/ati0ns/some-js-functions/blob/master/README.md#list-of-functions-that-can-be-prototyped).
+<br><br>
 ## [1.0.1] 2020-11-16
 ### Fixed
 * Missing `<br>` in [README](https://github.com/ati0ns/some-js-functions/blob/master/README.md) so it renders bad.
