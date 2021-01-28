@@ -7,6 +7,6 @@
  * @param {string} emptyChar String for empty unity.
  */
 module.exports = (currLoad = 0, maxLoad = 100, strLen = 10, fillChar = "1", emptyChar = "0") => {
-    const fillLen = Math.round(Math.min(1, currLoad / maxLoad) * strLen);
-    return fillChar.repeat(fillLen).padEnd((strLen - fillLen) * emptyChar.length + fillLen * fillChar.length, emptyChar);
-};
+    const fillLen = Math.round(Math.min(1, currLoad / maxLoad) * strLen)
+    return fillChar.repeat(fillLen).padEnd((strLen - fillLen) * emptyChar.length + fillLen * fillChar.length, emptyChar)
+}

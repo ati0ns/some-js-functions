@@ -38,42 +38,34 @@ Choose your weapon!<br>
 #### Array
 
 
-| [areTogether](https://github.com/ati0ns/some-js-functions/tree/master/arrays/areTogether) | [asyncForEach](https://github.com/ati0ns/some-js-functions/tree/master/others/asyncForEach) | [shuffle](https://github.com/ati0ns/some-js-functions/tree/master/arrays/shuffle) | [split](https://github.com/ati0ns/some-js-functions/tree/master/arrays/split) |
-| - | - | - | - |
+| [areTogether](https://github.com/ati0ns/some-js-functions/tree/master/arrays/areTogether) | [enForEach](https://github.com/ati0ns/some-js-functions/tree/master/arrays/enForEach) | [shuffle](https://github.com/ati0ns/some-js-functions/tree/master/arrays/shuffle) | [split](https://github.com/ati0ns/some-js-functions/tree/master/arrays/split) | [redo](https://github.com/ati0ns/some-js-functions/tree/master/others/redo) |
+| - | - | - | - | - |
 
 #### Date
 
 
-| [toDate](https://github.com/ati0ns/some-js-functions/tree/master/dates/toDate) |
-| - |
+| [toDate](https://github.com/ati0ns/some-js-functions/tree/master/dates/toDate) | [redo](https://github.com/ati0ns/some-js-functions/tree/master/others/redo) |
+| - | - |
 
 #### Integer/BigInt
 
 
-| [isPrime](https://github.com/ati0ns/some-js-functions/tree/master/numbers/isPrime) |
-| - |
+| [isPrime](https://github.com/ati0ns/some-js-functions/tree/master/numbers/isPrime) | [redo](https://github.com/ati0ns/some-js-functions/tree/master/others/redo) |
+| - | - |
 
 #### Object
 
 
-| [getObjValue](https://github.com/ati0ns/some-js-functions/tree/master/objects/getObjValue) |
-| - |
+| [getObjValue](https://github.com/ati0ns/some-js-functions/tree/master/objects/getObjValue) | [redo](https://github.com/ati0ns/some-js-functions/tree/master/others/redo) |
+| - | - |
 
 #### String
 
 
-| [args](https://github.com/ati0ns/some-js-functions/tree/master/strings/args) | [findBeacons](https://github.com/ati0ns/some-js-functions/tree/master/strings/findBeacons) | [simplify](https://github.com/ati0ns/some-js-functions/tree/master/strings/simplify) | [toMs](https://github.com/ati0ns/some-js-functions/tree/master/strings/toMs) |
-| - | - | - | - |
+| [args](https://github.com/ati0ns/some-js-functions/tree/master/strings/args) | [findBeacons](https://github.com/ati0ns/some-js-functions/tree/master/strings/findBeacons) | [simplify](https://github.com/ati0ns/some-js-functions/tree/master/strings/simplify) | [toMs](https://github.com/ati0ns/some-js-functions/tree/master/strings/toMs) | [redo](https://github.com/ati0ns/some-js-functions/tree/master/strings/vars) | [convertES](https://github.com/ati0ns/some-js-functions/tree/master/others/convertES) | [toClauses](https://github.com/ati0ns/some-js-functions/tree/master/strings/toClauses) | [vars](https://github.com/ati0ns/some-js-functions/tree/master/strings/vars) |
+| - | - | - | - | - | - | - | - |
 
-##### Others
-
-
-| [convertES](https://github.com/ati0ns/some-js-functions/tree/master/others/convertES) |
-| - |
-
-## Tips
-
-### A bit minified
+##### A bit minifiedTips
 
 Minification is to write exactly the same program but with less characters to make it more light.
 Here are some transformations you can do to improve your programs' efficiency.
@@ -82,6 +74,8 @@ Here are some transformations you can do to improve your programs' efficiency.
 
 | Basic | Minified | Notes |
 | :-: | :-: | :-: |
-| true | !0 |   |
-| false | !1 |   |
-| function() { return thing } | () => thing | Doesn't work with `this`.<br>[Why?](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions#this_and_Arrow_Functions) |
+| true | !0 | 1 works in specific cases. |
+| false | !1 | 0 works in specific cases. |
+| function() { return thing } | () => thing | Doesn't work with`this`.<br>[Why?](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions#this_and_Arrow_Functions) |
+
+Do not minify arguments' names! e. g. `(name, age, weigth) => ...` is better than `(n, a, w) => ...` but you can minify the variables' names later inside the function's execution block.

@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.2.0] 2021-01-28
+
+### Added
+
+* [enForEach](https://github.com/ati0ns/some-js-functions/tree/master/arrays/forEachEnd) function both basic and minified versions.
+* [mdMeasure](https://github.com/ati0ns/some-js-functions/tree/master/strings/mdMeasure) function both basic and minified versions.
+* [redo](https://github.com/ati0ns/some-js-functions/tree/master/others/redo) function both basic and minified versions.
+* [toClauses](https://github.com/ati0ns/some-js-functions/tree/master/strings/toClauses) function both basic and minified versions.
+* [vars](https://github.com/ati0ns/some-js-functions/tree/master/strings/vars) function both basic and minified versions.
+
+### Changed
+
+* `asyncForEach` function is now part of [enForEach](https://github.com/ati0ns/some-js-functions/tree/master/arrays/forEachEnd) function.
+* A lot of semicolons removed.
+
 ## [1.1.1] 2021-01-03
 
 ### Fixed

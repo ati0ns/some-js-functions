@@ -1,0 +1,1 @@
+module.exports=(str,...vars)=>str.replace(/{(\d+)}/g,(_,a)=>vars[a]);
